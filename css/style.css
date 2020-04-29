@@ -1,17 +1,30 @@
+
 .container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  /* each column 150px max, 6 in total.  */
+  grid-template-rows: 100px [line1] 200px [line2] auto [line3] 80px;
+  grid-template-areas: 
+  "hd hd hd hd hd hd"
+  "sf sf sf sf sf sf"
+  "ct ct ct ct ct ct"
+  "ft ft ft ft ft ft";
+}
+@media(min-width:900px){
+  .container{
   /* Step 1: Set display to grid */
     display:grid;
  /* Step 2: setup rows amd columns */
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: [lEdge]40px [left1]50px [left2] 400px [right2] 50px [right1] 40px [rEdge];
     /* grid-template-columns: 300px 300px 300px; */
-    grid-template-rows: 250px 600px;
+    grid-template-rows: 100px [line1] auto [line2] 80px;
     grid-template-areas: 
-    "hd hd hd hd hd hd hd hd"
-    "sd sd main main main main main main"
-    "ft ft ft ft ft ft ft ft";
+    ". hd hd hd hd ."
+    ". sf ct ct ct ."
+    ". ft ft ft ft .";
     border: 2px solid yellow;
-
-}
+  }
+} /* mid-width container for larger screens */
 .box{
 /* width: 250px;
   height: 150px; */
@@ -21,15 +34,15 @@
 
 .header{
   /* row start/column start/ row end/ column end */
-  grid-area:hd;
+  grid-area: hd;
+  /* grid-area: hd; */
 }
-
-.footer{
-  grid-area: ft;  
-}
-.sidebar{
-  grid-area: sd;
+.self{
+  grid-area: sf;
 }
 .content{
-  grid-area: main;
+  grid-area: ct;
+}
+.footer{
+  grid-area: ft;  
 }
