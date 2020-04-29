@@ -1,0 +1,35 @@
+.container{
+  /* Step 1: Set display to grid */
+  display:grid;
+ /* Step 2: setup rows amd columns */
+ /* Step : setup named grid areas */
+  height: 700px;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 100px 40px 1fr 30px;
+  grid-template-areas: 
+  "hd hd hd"
+  "ftr ftr ftr"
+  ". main ."
+  "ft ft ft";
+    border: 2px solid yellow;
+
+}
+.box{
+  border: 1px solid red;
+  background: #F8FA9D;
+  padding: 15px;
+  }
+
+.header{
+  grid-area: hd;
+  
+}
+.footer{
+  grid-area: ft;
+}
+.feature{
+  grid-area: ftr;
+}
+.content{
+  grid-area: main;
+}
