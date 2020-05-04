@@ -6,8 +6,9 @@ body {
 .container {
   padding: 10px;
   display: grid;
+  margin: auto;
   grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: [Header]80px [self] auto [ct_ln] auto [ft] auto;
+  grid-template-rows: [Header]100px [self] auto [ct_ln] auto [ft] auto;
   grid-template-areas: 
   "hd hd hd"
   "sf sf sf"
@@ -23,21 +24,18 @@ body {
   display: grid;
   grid-template-columns: 100px 1fr;
   grid-template-areas: "color-box post";
-  /* padding: 20px;
-  border-radius: 20px;
-  margin: 10px; */
 }
 .number-box {
   border: 1px solid red;
   grid-area: color-box;
-  background: rgb(253, 216, 95);
+  background: rgb(245, 212, 119);
   display: flex;
   justify-content: center; 
   align-items: center;
   border-radius: 30px;
   margin: 10px;
   margin-top: 30px;
-  height: 75px;
+  height: 78px;
   font-size: x-large;
 }
 .posts {
@@ -98,6 +96,7 @@ body {
 p {
   margin-left: 10px; 
   margin-right: 10px;
+  line-height: 1.6;
 }
 h1 {
   border: 1px solid red;

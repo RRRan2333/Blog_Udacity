@@ -1,3 +1,4 @@
+/* mid-width container for larger screens */
 @media(min-width:900px){
     .container {
       max-width: 1400px;
@@ -12,4 +13,4 @@
       "ct ct sf"
       "ft ft ft";
     }
-  } /* mid-width container for larger screens */
+  } 
