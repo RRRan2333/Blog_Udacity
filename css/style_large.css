@@ -1,12 +1,13 @@
 /* mid-width container for larger screens */
 @media(min-width:900px){
-    .container {
+    .layout {
+      border-color: yellow;
       max-width: 1400px;
       padding: 20px;
       margin: auto; 
       /* setting up grids */
       display:grid;
-      grid-template-columns: [line1] 1fr [line2] 1fr [line3] 250px [line4];
+      grid-template-columns: [line1] 1fr [line2] 1fr [line3] 300px [line4];
       grid-template-rows: 100px [line1] auto [line2] auto;
       grid-template-areas: 
       "hd hd hd"
