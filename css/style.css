@@ -1,9 +1,13 @@
+@import "style_large.css";
+@import "style_mobile.css";
+@import "style_reg.css";
+
 body {
   font-family: 'Quicksand', Helvetica, sans-serif;
   padding: 20px;
   background: #e9e9e9;
 }
-.layout {
+/* .layout {
   padding: 10px;
   display: grid;
   margin: auto;
@@ -15,7 +19,7 @@ body {
   "sf sf sf"
   "ct ct ct"
   "ft ft ft";
-}
+} */
 
 .content {
   /* border: 1px solid red; */
@@ -91,7 +95,7 @@ footer {
   border-top: 2px solid gray;
   grid-area: ft; 
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .nav-link:link {
   color: #000;

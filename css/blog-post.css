@@ -115,6 +115,10 @@ article {
   cursor: pointer;
   margin: 5px;
 }
+button.home-unicode {
+  width: 130px;
+}
+
 .button span {
   cursor: pointer;
   display: inline-block;

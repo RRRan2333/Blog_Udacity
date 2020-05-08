@@ -1,0 +1,42 @@
+@media(max-width:420px){
+.layout {
+  padding: 0px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: [header]auto [article]auto [nav]auto [footer] auto;
+  grid-template-areas: 
+  "hd"
+  "main"
+  "nav"
+  "ft";
+  /* border: 2px solid yellow; */
+}
+header {
+  flex-direction: column;
+}
+header button {
+  background-color: white;
+  align-self: center;
+}
+.header-box {
+  /* border: 1px solid red; */
+  padding-left: 0px;
+}
+article {
+  line-height: 1.4;
+}
+.nav {
+  flex-direction: column;
+  padding: 20px;
+}
+.button {
+  width: 200px; 
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+
+}
